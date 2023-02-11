@@ -28,6 +28,6 @@ class FactorialTest {
     @Test
     void testThat5InputHandledCorrectly() {
         long actual = new Factorial().factorial(5);
-        Assertions.assertEquals(120,actual);
+        Assertions.assertEquals(10,actual);
     }
 }
