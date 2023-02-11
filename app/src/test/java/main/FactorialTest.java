@@ -3,7 +3,6 @@ package main;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 class FactorialTest {
 
@@ -29,5 +28,11 @@ class FactorialTest {
     void testThat5InputHandledCorrectly() {
         long actual = new Factorial().factorial(5);
         Assertions.assertEquals(120,actual);
+    }
+
+    @Test
+    void testThat6InputHandledCorrectly() {
+        long actual = new Factorial().factorial(6);
+        Assertions.assertEquals(720,actual);
     }
 }
